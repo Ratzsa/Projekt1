@@ -1,6 +1,6 @@
 body {
   background-color: black;
-  color: #39FF14;
+  color: #4dea31;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -32,6 +32,8 @@ main {
   position: relative;
   z-index: 1;
   padding: 50px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 footer {
@@ -41,7 +43,7 @@ footer {
 }
 
 body a {
-  color: #39FF14;
+  color: #4dea31;
   text-decoration: none;
 }
 
@@ -50,7 +52,7 @@ body a:hover {
 }
 
 nav a {
-  color: #39FF14;
+  color: #4dea31;
   text-decoration: none;
   padding: 10px 15px;
 }
@@ -58,3 +60,9 @@ nav a {
 nav a:hover {
   color: #BBFF99;
 }
+
+.custom-table {
+    border-collapse: separate;
+    border-spacing: 30px;
+}
+
