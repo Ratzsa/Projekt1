@@ -6,12 +6,27 @@ body {
   min-height: 100vh;
 }
 
+body.bling {
+  background: black;
+}
+body:not(.bling) {
+  background: white;
+  color: black; 
+}
+body:not(.bling) #q {
+  display:none;
+  background-color: white;
+  color: black;
+}
+
+/* Font */
 .michroma-regular {
   font-family: "Michroma", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
+/* Har med Matrix-scriptet att göra */
 #q {
   position: fixed;
   top: 0;
@@ -21,6 +36,7 @@ body {
   bottom: 0;
 }
 
+/* Formatet på sidan */
 header {
   padding: 5px;
   text-align: center;
@@ -42,6 +58,7 @@ footer {
   z-index: 1;
 }
 
+/* Länkfärger */
 body a {
   color: #4dea31;
   text-decoration: none;
@@ -61,8 +78,48 @@ nav a:hover {
   color: #BBFF99;
 }
 
+body:not(.bling) a {
+  color: #1910b8;
+  text-decoration: none;
+}
+
+body:not(.bling) body a:hover {
+  color: #1910b8;
+}
+
+body:not(.bling) nav a {
+  color: #1910b8;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+body:not(.bling) nav a:hover {
+  color: #1910b8;
+}
+
+/* Table */
 .custom-table {
     border-collapse: separate;
     border-spacing: 30px;
 }
 
+/* Button */
+[role="button"] {
+  padding: 2px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(161, 247, 174);
+  cursor: default;
+}
+
+[role="button"]:hover,
+[role="button"]:focus,
+[role="button"]:active {
+  background-color: rgb(161, 247, 174);
+  color: rgb(0, 0, 0);
+}
+
+/* Lista var i koden jag stal, tror inte den behövs. Vid problem, ta bort kommentar.
+ul {
+  list-style: none;
+}
+*/
