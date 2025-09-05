@@ -1,4 +1,3 @@
-/* Global body and font styles */
 body {
   background-color: black;
   color: #4dea31;
@@ -7,16 +6,9 @@ body {
   min-height: 100vh;
 }
 
-body.michroma-regular {
-    font-family: 'Michroma', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
 body.bling {
   background: black;
 }
-
 body:not(.bling) {
   background: white;
   color: black; 
@@ -25,6 +17,13 @@ body:not(.bling) #q {
   display:none;
   background-color: white;
   color: black;
+}
+
+/* Font */
+.michroma-regular {
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* Har med Matrix-scriptet att göra */
@@ -84,7 +83,7 @@ body:not(.bling) a {
   text-decoration: none;
 }
 
-body:not(.bling) a:hover {
+body:not(.bling) body a:hover {
   color: #1910b8;
 }
 
@@ -98,45 +97,14 @@ body:not(.bling) nav a:hover {
   color: #1910b8;
 }
 
-/* Styles for the table replacement using flexbox */
+/* Table */
 .custom-table {
-    display: flex;
-    flex-direction: column;
-    /* Replicates the border-spacing from the original table */
-    gap: 30px; 
+    border-collapse: separate;
+    border-spacing: 30px;
 }
 
-/* Styles for each "row" in the layout */
-.table-row {
-    display: flex;
-    flex-direction: column;
-    transition: background-color 0.2s ease;
-}
-
-/* Styles for the "cells" in the row */
-.table-cell {
-    /* Ensures cells grow to fill space on larger screens */
-    flex: 1; 
-    margin-top: 0.5rem;
-}
-
-.table-cell:first-child {
-    font-weight: bold;
-    margin-top: 0;
-}
-
-/* Media query for larger screens to make it a two-column layout */
-@media (min-width: 768px) {
-    .table-row {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        gap: 30px; /* Adds space between the columns on large screens */
-    }
-
-    .table-cell {
-        margin-top: 0;
-    }
+.custom-table td {
+  white-space: nowrap;
 }
 
 /* Button */
@@ -153,3 +121,9 @@ body:not(.bling) nav a:hover {
   background-color: rgb(161, 247, 174);
   color: rgb(0, 0, 0);
 }
+
+/* Lista var i koden jag stal, tror inte den behövs. Vid problem, ta bort kommentar.
+ul {
+  list-style: none;
+}
+*/
