@@ -98,6 +98,8 @@ body:not(.bling) nav a:hover {
   color: #1910b8;
 }
 
+/* AI slop för formatering */
+
 /* Styles for the table replacement using flexbox */
 .custom-table {
     display: flex;
@@ -139,7 +141,7 @@ body:not(.bling) nav a:hover {
     }
 }
 
-/* Button */
+/* Bling-knappen */
 [role="button"] {
   padding: 2px;
   background-color: rgb(0, 0, 0);
